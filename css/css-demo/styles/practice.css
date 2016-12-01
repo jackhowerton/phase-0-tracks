@@ -1,0 +1,23 @@
+#contact-info {
+	font-size: .8em;
+}
+
+.job {
+	background-color: #e9e5dc;
+	border-radius: 10px;
+	padding: 5px 5px 5px 5px;
+	margin: 15px;
+}
+
+.skill-lists {
+	font-size: .8em;
+}
+
+.featured {
+	font-weight: bold;
+}
+
+.featured.plus {
+	font-style:italic;
+}
+
