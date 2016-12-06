@@ -57,3 +57,4 @@ Release 0: RIDING THE ELEVATOR
 		- Monitor the floor the elevator is on as it travels.
 		- If the elevator stops AND the floor equals the inputted Destination:
 			- Depart the elevator by moving backwards.
+		- Celebrate!
