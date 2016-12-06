@@ -1,0 +1,59 @@
+Release 1: DOING THE DISHES
+
+- Count how many items are sitting in the sink. Store this value as DIRTY DISHES.
+
+- If there are more than three DIRTY DISHES:
+	- Shriek "It's time to do the dishes!"
+	- Turn on the faucet to HOT.
+	- Squirt a liberal dose of anti-bacterial dish soap onto all of the DIRTY DISHES.
+	- Splash a small amount of HOT water onto all DIRTY DISHES.
+- Else:
+	- Resume browsing reddit.
+
+- While there are any DIRTY DISHES remaining:
+	- Hold the top-most dirty dish with the left hand.
+	- Hold sponge under faucet with the right hand.
+	- Squeeze and relax sponge to draw in HOT tap water. This serves to (1) replenish moisture and get rid of residue.		- While a given dirty dish is dirty and until it is clean:
+		- Scrub in a circular motion with the now wet sponge, generating foam from dish soap and loosening food matter.
+	- Rinse the dish under the hot water until completely free of soapy foam and now loosened food matter.
+	- Place the dish in hand to the side of the sink, starting or otherwise adding to a growing area next to the sink for CLEAN DISHES to dry!
+	- Pat self on the back and take note that there is now one less DIRTY DISH!
+
+- If there are no more DIRTY DISHES:
+	- While there is any residual food matter: 
+		- Use the sponge to push it toward the drain.
+	- Rinse the sponge under the tap, squeeze it out until dry, and place it next to the sink. 
+	- Wash off your hands of any remaining soap or food matter.
+	- Dry your hands.
+	- Turn off the faucet.
+
+- While there are CLEAN DISHES sitting next to the sink:
+	- Pick up the nearest CLEAN DISH.
+	- Grab a dry and clean towel with the other hand.
+	- Dry in a circular motion until there is no more moisture.
+	- Place the dish in the cupboard.
+	- Pat self on the back and take note that there is now one less CLEAN DISH to dry!
+
+- If there are no more CLEAN DISHES sitting next to the sink and waiting to be dried and stored in the cupboard:
+	- Celebrate!
+	- Return to browsing reddit! 
+
+
+Release 0: RIDING THE ELEVATOR
+
+- Take a user input (Destination)
+- If the 'Destination' input is a valid number / corresponds to a floor in the building:
+	- Move forward to the elevator doors.
+	- Begin waiting.
+	- While waiting:
+		- If the elevator is present:
+			- Move forward into the elevator.
+		- Else press the button to call the elevator.
+			- Stand by.
+			- If elevator arrives at the current floor:
+				- Move forward into the elevator.
+
+	- While in the elevator:
+		- Monitor the floor the elevator is on as it travels.
+		- If the elevator stops AND the floor equals the inputted Destination:
+			- Depart the elevator by moving backwards.
