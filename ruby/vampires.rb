@@ -1,6 +1,6 @@
 puts "How many employees to process?"
 employees = gets.chomp.to_i; 
-currentyear = 2016; 
+currentyear = 2016; #declares what year it is for the age-related questions. Could alternately prompt the user for the current date, future-proofing the program somewhat. 
 
 
 
