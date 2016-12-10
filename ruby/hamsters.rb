@@ -16,8 +16,9 @@ color = gets.chomp;
 # whether the hamster is a good candidate for adoption
 puts "Are you a good candidate for adoption? (YES/NO)"
 
-while good = gets.chomp.upcase;
-	case good.upcase
+while 
+	good =gets.chomp.upcase;
+	case good
 		when "YES"
 			goodcandidate = true;
 			break;
