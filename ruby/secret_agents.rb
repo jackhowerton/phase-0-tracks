@@ -44,9 +44,9 @@ puts "What is the password?"
 password = gets.chomp;
 
 if response == "encrypt" then
-	encrypt(password);
+	puts encrypt(password);
 else
-	decrypt(password);
+	puts decrypt(password);
 end
 
 
