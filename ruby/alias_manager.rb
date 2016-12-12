@@ -1,4 +1,4 @@
-# Storage for the user's original names and converted results
+# Storage for the user's original names and converted results.
 $originalNames = [ ]
 $convertedNames = [ ]
 
