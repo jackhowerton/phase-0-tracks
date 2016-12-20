@@ -34,6 +34,55 @@ remove(grocery_list,"Lemonade")
 update(grocery_list,"Ice Cream",1)
 printout(grocery_list)
 
+
+
+
+# ARRAY METHOD FOR GPS 2.2
+
+# grocery_array = [ ]
+
+# def input (array, item, quantity)
+#     array << [item, quantity]
+# end
+
+# def remove (array,item)
+#   array.delete_if {|piece| piece[0] == item }
+# end
+
+# def printout (array)
+#   array.each {|food,value| puts "#{food}: #{value}"}
+# end
+
+# # ARRAY METHOD DRIVER CODE
+# input(grocery_array,"lemons",99)
+# input(grocery_array,"tacos",2000)
+# input(grocery_array,"chocolate",3000)
+# input(grocery_array,"watermelon",30)
+# input(grocery_array,"hot chocolate",99)
+# input(grocery_array,"honey",2000)
+# input(grocery_array,"grilled cheese",5000)
+
+# printout(remove(grocery_array,"lemons")) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # 1. What did you learn about pseudocode from working on this challenge?
 	# A: It can be very helpful to write pseudocode as different methods.
 	# In past, I have made a bad habit of just writing a collection of logical 
