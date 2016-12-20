@@ -25,7 +25,6 @@ def printout (list)
 end
 
 
-
 # DRIVER CODE
 input(grocery_list,"Lemonade",2)
 input(grocery_list,"Tomatoes",3)
