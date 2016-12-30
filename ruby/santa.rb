@@ -1,5 +1,9 @@
 class Santa
 
+	attr_reader :ethnicity
+
+	attr_accessor :gender, :age
+
 	def speak
 		p "Ho, ho, ho! Haaaappy holidays!"
 	end
@@ -41,22 +45,6 @@ class Santa
 		puts "Age: #{@age}"
 	end
 	
-	def gender=(new_gender)
-		@gender = new_gender
-	end
-
-	def gender
-		@gender
-	end
-	
-	def age
-	  @age
-	end
-	
-	def ethnicity
-	  @ethnicity
-	end
-
 end
 
 # santas = [ ]
@@ -65,23 +53,16 @@ end
 # santas << Santa.new("Pedro","male","hispanic")
 # santas << Santa.new("Tim", "male", "korean")
 
-example_ethnicities = ["white","black","latino","asian"]
-example_genders = ["male","female","agender","genderfluid"]
-example_names = ["bob","rebecca","paul","george"]
+example_ethnicities = ["white","black","latino","asian","brazilian","russian","irish"]
+example_genders = ["male","female","agender","genderfluid","male","male","female"]
+example_names = ["bob","rebecca","paul","george","billy","sam","sarah"]
 
 santas2 = [ ]
 example_genders.length.times do |i|
   santas2 << Santa.new(example_names[i], example_genders[i], example_ethnicities[i])
 end
 
-# santas2.each { |santainquestion| santainquestion.eat_milk_and_cookies("chocolate")}
-
-# santas2.object_id
-
-Jack = Santa.new("Jack","male","37")
-
-Jack.get_mad_at("Dasher")
-
-Jack.gender
-
-Jack.ethnicity
+santas2.each do |x|
+	x.age = Random.rand(140)
+	x.about
+end
