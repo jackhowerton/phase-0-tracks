@@ -28,12 +28,33 @@ class Santa
 		@age += 1
 	end
 
+	def get_mad_at(name)
+		@reindeer_ranking.delete(name)
+		@reindeer_ranking << name
+	end
+
 	def about
 		puts "Name: #{@name}"
 		puts "Gender: #{@gender}"
 		puts "Ethnicity: #{@ethnicity}"
 		puts "Reindeer Ranking: #{@reindeer_ranking}"
 		puts "Age: #{@age}"
+	end
+	
+	def gender=(new_gender)
+		@gender = new_gender
+	end
+
+	def gender
+		@gender
+	end
+	
+	def age
+	  @age
+	end
+	
+	def ethnicity
+	  @ethnicity
 	end
 
 end
@@ -53,6 +74,14 @@ example_genders.length.times do |i|
   santas2 << Santa.new(example_names[i], example_genders[i], example_ethnicities[i])
 end
 
-santas2.each { |santainquestion| santainquestion.eat_milk_and_cookies("chocolate")}
+# santas2.each { |santainquestion| santainquestion.eat_milk_and_cookies("chocolate")}
 
-santas2.object_id
+# santas2.object_id
+
+Jack = Santa.new("Jack","male","37")
+
+Jack.get_mad_at("Dasher")
+
+Jack.gender
+
+Jack.ethnicity
