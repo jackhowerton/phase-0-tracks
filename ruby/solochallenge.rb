@@ -11,6 +11,12 @@ class GuessGame
     puts "Welcome to the guessing game!"
     puts "Player 1: please enter the phrase Player 2 will guess at!"
     @phrase = gets.chomp.downcase
+    puts ""
+    puts ""
+    puts ""
+    puts ""
+    puts ""
+    puts ""
     @guess_count = 0
     @is_over = false
     @guesses_remaining = @phrase.length + 3
