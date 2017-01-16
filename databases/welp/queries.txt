@@ -1,0 +1,30 @@
+1. 
+COMMAND: sqlite> SELECT * FROM users,reviews,businesses WHERE reviews.business_id = businesses.id AND reviews.user_id = users.id;
+
+OUTPUT:
+3|Sarah|Johnson|1|3|decent|1|3|1|Joe's Crab Shack
+2|Eric|Wright|2|5|great|1|2|1|Joe's Crab Shack
+1|Joe|Lemons|3|1|awful|1|1|1|Joe's Crab Shack
+2|Eric|Wright|4|1|super awful!|2|2|2|McDonalds
+1|Joe|Lemons|5|5|the greatest!|4|1|4|KFC
+
+
+
+2. 
+COMMAND: sqlite> SELECT users.firstname, users.lastname, reviews.stars, reviews.comment FROM users,reviews,businesses WHERE reviews.business_id = businesses.id AND reviews.user_id = users.id;
+
+OUTPUT:
+Sarah|Johnson|3|decent
+Eric|Wright|5|great
+Joe|Lemons|1|awful
+Eric|Wright|1|super awful!
+Joe|Lemons|5|the greatest!
+
+
+3. 
+COMMAND: sqlite> SELECT * FROM users,reviews,businesses WHERE reviews.business_id = businesses.id AND reviews.user_id = users.id AND businesses.name="KFC";
+
+
+OUTPUT:
+1|Joe|Lemons|5|5|the greatest!|4|1|4|KFC
+
