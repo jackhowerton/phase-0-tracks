@@ -1,0 +1,63 @@
+1. 
+COMMAND:
+sqlite> SELECT * FROM cars;
+
+OUTPUT:
+1|Sally|1990|red|0|1
+2|Bert|1970|yellow|0|3
+3|Bert|2015|yellow|0|3
+4|BB2|2009|orange|0|4
+5|Car5|2000|purple|0|5
+6|GREEN CAR!|2000|green|0|1
+sqlite> 
+
+
+2.
+COMMAND:
+sqlite> UPDATE cars SET year=2022 WHERE color="purple";
+
+(NO OUTPUT, BUT UPDATED DATABASE BELOW:)
+1|Sally|1990|red|0|1
+2|Bert|1970|yellow|0|3
+3|Bert|2015|yellow|0|3
+4|BB2|2009|orange|0|4
+5|Car5|2022|purple|0|5
+6|GREEN CAR!|2000|green|0|1
+
+
+3.
+COMMAND:
+sqlite> SELECT * FROM cars,makes WHERE cars.make_id = makes.id;
+
+OUTPUT:
+1|Sally|1990|red|0|1|1|Ford
+2|Bert|1970|yellow|0|3|3|Tesla
+3|Bert|2015|yellow|0|3|3|Tesla
+4|BB2|2009|orange|0|4|4|Mercedes
+5|Car5|2022|purple|0|5|5|Chevrolet
+6|GREEN CAR!|2000|green|0|1|1|Ford
+
+
+4. 
+COMMAND:
+sqlite> SELECT name, color, make FROM cars,makes WHERE cars.make_id = makes.id;
+
+OUTPUT:
+Sally|red|Ford
+Bert|yellow|Tesla
+Bert|yellow|Tesla
+BB2|orange|Mercedes
+Car5|purple|Chevrolet
+GREEN CAR!|green|Ford
+
+
+5.
+COMMAND:
+sqlite> DELETE FROM cars WHERE color="purple";
+
+(NO OUTPUT, BUT UPDATED DATABASE BELOW:)
+1|Sally|1990|red|0|1|1|Ford
+2|Bert|1970|yellow|0|3|3|Tesla
+3|Bert|2015|yellow|0|3|3|Tesla
+4|BB2|2009|orange|0|4|4|Mercedes
+6|GREEN CAR!|2000|green|0|1|1|Ford
