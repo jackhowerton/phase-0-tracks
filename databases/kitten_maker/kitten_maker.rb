@@ -37,8 +37,8 @@ end
 end
 
 # explore ORM by retrieving data
-# kittens = db.execute("SELECT * FROM kittens")
-# kittens.each do |kitten|
-#  puts "#{kitten['name']} is #{kitten['age']}"
-# end
+kittens = db.execute("SELECT * FROM kittens")
+kittens.each do |kitten|
+ puts "#{kitten['name']} is #{kitten['age']}"
+end
 
